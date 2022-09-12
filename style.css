@@ -31,7 +31,7 @@
 
 
 html {
-    background: linear-gradient(105deg, rgba(151, 148, 148, 0.2) 39%, rgba(152, 157, 158, 0.459) 96%) center center / 1500px 1100px no-repeat,
+    background: linear-gradient(105deg, rgba(151, 148, 148, 0.2) 39%, rgba(152, 157, 158, 0.459) 96%) center   / 1500px 1100px no-repeat,
     url() center no-repeat, rgb(254, 255, 254);
     background-attachment: scroll;
   }
@@ -75,7 +75,7 @@ html {
 
     #fit-picture{
         height:270px ;
-        width: 2000px;
+        width: 1890px;
 
       }
 
