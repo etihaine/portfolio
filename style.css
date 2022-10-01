@@ -1,7 +1,17 @@
+#contenu {
+  text-align:justify;
+  margin-top: 300px;
+  margin-right:  60px ;
+    
+
+}
+
+
 #filephp {
     padding-right: 100px;
     font-size: 1rem;
     margin-left:300px;
+    
 }
 #filehtml {
     padding-right: 100px;
@@ -33,21 +43,33 @@
 html {
     background: linear-gradient(105deg, rgba(151, 148, 148, 0.2) 39%, rgba(152, 157, 158, 0.459) 96%) center   / 1500px 1100px no-repeat,
     url() center no-repeat, rgb(254, 255, 254);
-    background-attachment: scroll;
+    background-attachment:fixed;
+    display: block;
+    margin: auto; 
+    position: absolute;
+margin-right: 10px;
+width : 1900px;
+height: 200px;
+
   }
   
   h2 {
     margin-left:900px;
     margin-top: 100px;
+    text-align:justify;
   }
   h3 {
     margin-left:230px;
     margin-bottom:20px;
+    text-align:justify;  
   }
   p,h4{
     margin-left:220px;
     margin-bottom:20px;
-    font-size: large; }
+    font-size: large;
+    text-align:justify;  }
+  
+   
     
   #see {
     background-color: #c7b4b4; 
@@ -74,10 +96,17 @@ html {
       }
 
     #fit-picture{
-        height:270px ;
-        width: 1890px;
 
-      }
+      position: absolute;
+top: -10px;
+margin-right: 10px;
+width : 1900px;
+height: 270px;
+}
+        
+
+
+      
 
 
 
