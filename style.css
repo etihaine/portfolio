@@ -1,11 +1,15 @@
 #contenu {
   text-align:justify;
   margin-top: 300px;
-  margin-right:  60px ;
-    
-
+  margin-right: 960px ;
+ 
 }
 
+#nom {
+  text-align:justify;
+  margin-top: 10px;
+  margin-right: 400px ;
+}
 
 #filephp {
     padding-right: 100px;
@@ -41,7 +45,7 @@
 
 
 html {
-    background: linear-gradient(105deg, rgba(151, 148, 148, 0.2) 39%, rgba(152, 157, 158, 0.459) 96%) center   / 1500px 1100px no-repeat,
+    background: linear-gradient(105deg, #97949433 39%, rgba(152, 157, 158, 0.459) 96%) center   / 1500px 1100px no-repeat,
     url() center no-repeat, rgb(254, 255, 254);
     background-attachment:fixed;
     display: block;
@@ -74,7 +78,7 @@ height: 200px;
     font-size: large;
     text-align:justify;  }
   
-   
+ 
     
   #see {
     background-color: #c7b4b4; 
@@ -130,10 +134,177 @@ height: 270px;
   margin-left: 620px; 
 }
 
+#veille {
+  margin-left: 650px;
 
-      
+}
+/* menu principale */
+.menu {
+  display: flex;              /* Transformation en flexbox */
+  padding:0;                  /* Suppression des marges internes */
+  
+}
+
+.menu li {
+  list-style-type: none ;       /* Suppression des puces */
+}
+
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */
+}
+
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */   
+  
+  margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+  padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;           /* Centrage du texte */   
+     
+  color: #fff;                  /* Couleur du texte */
+  text-decoration: none;        /* Suppression du soulignement */
+  border: 1px solid #fff;       /* Ajout d'une bordure */
+  border-radius: 4px;           /* Arrondis des bordures */
+}
+
+.menu {
+  display: flex;              /* Transformation en flexbox */
+  padding:0;                  /* Suppression des marges internes */
+  justify-content: center     /* Alignements des liens dans le menu */
+}
+
+.menu a:hover {
+  background-color: #ed2794;
+  color: #ffe843;
+  border-color: #ffe843;
+}
+
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */   
+  
+  margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+  padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;           /* Centrage du texte */   
+  background-color: #1ABC9C;    /* Arrière-plan */
+  color: #fff;                  /* Couleur du texte */
+  text-decoration: none;        /* Suppression du soulignement */
+  border: 1px solid #fff;       /* Ajout d'une bordure */
+  border-radius: 4px;           /* Arrondis des bordures */
+  transition: all 1s ;          /* Ajout des effets de transition */
+} 
+.menu a.actif {    
+  background-color: #000 ; 
+  color: #1ABC9C ;
+  border-color: #1ABC9C ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+background-color: #ed2794;
+color: #ffe843;
+border-color: #ffe843;
+}
 
 
+/* menu de projet:*/
+:root{
+  --hauteur-menu: 60px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat, sans-serif;
+}
+nav {
+  width: 100%;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+}
 
-      
+nav > ul {
+  display: flex;
+  text-align: center;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+  height: var(--hauteur-menu);
+}
+ 
+nav ul {
+  list-style-type: none;
+}
 
+nav > ul > li {
+  background-color: white;
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+nav > ul > li > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-deroulant > a:after{
+  content: '❯';
+  font-size: 15px;
+  margin-left: 7px;
+  display: inline-block;
+}
+
+.sous-menu {
+  margin-top: var(--hauteur-menu);
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border-radius: 2px;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.sous-menu > li > a {
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+nav > ul > li:hover > a{
+  color: #2169EC;
+}
+
+.sous-menu > li:hover {
+  background-color: rgba(33, 105, 236, 0.3);
+}
+
+.sous-menu > li:hover > a {
+  color: white;
+}
+
+.menu-deroulant:hover > a:after{
+  animation: rotationFleche 0.2s linear forwards;
+}
+@keyframes apparitionSousMenu {
+  0% {
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+    border-top: 3px solid #2169EC;
+  }
+  30% {
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+  }
+  100% {
+    max-height: 50em;
+    border-top: 3px solid #2169EC;
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+  }
+}
+.menu-deroulant:hover > .sous-menu {
+  animation: apparitionSousMenu 1s forwards;
+}

@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
+  <link href="index.html" />
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
     <title> Portfolio Etienne Mallarmé Schwob </title>
-
 </head>
 <body>
+  <div id="contenu">
+  <ul class="menu">
+    <li>
+        <a href="accueil.html" class="actif">Accueil</a>    
+    </li>
+    <li>
+      <a href="BTS.html">Formation</a>
+  </li>
+    <li>
+        <a href="projet.html">Projects</a>
+    </li>
+    <li>
+        <a href="Veille.html">Veille</a>
+    </li>
+    
+</ul></div>
   <div id="conteneur">    
     <img  id="fit-picture"src="image/pro3.jpg"> </div>
 
     
     
-    <div id="contenu">
+    <div id="nom">
       <h2>Etienne MALLARMÉ SCHWOB</h2>
       
     </div>
+    
 <h2>
     Profil
 </h2>
@@ -102,14 +119,21 @@
    
   </p>
 <br>
-
-<h3 id = "profil">
+<table>
+<tr><h3 id = "profil">
   Mes projets 
-</h3>
-<button id = "see"><a  href="projet.html" target="_blank" rel="noreferrer noopener" download=""
+</h3> 
+<h3 id = "veille">
+  Ma veille 
+</h3> </tr>
+<tr><button id = "see"><a  href="projet.html" target="_blank" rel="noreferrer noopener" download=""
   <strong> Accéder à mes projets </strong></a>
 </button>
-
+<button id = "see"><a  href="Veille.html" target="_blank" rel="noreferrer noopener" download=""
+  <strong> Accéder à ma veille </strong></a>
+</button> 
+</tr>
+</table>
 
   <h3 id = "profil">
     Mon CV 
@@ -120,6 +144,7 @@
 <button id = "DL">
   <a class="wp-block-button__link" href="image/ETIENNE MALLARMÉ SCHWOB.pdf" download="Etienne Mallarmé Schwob  - Curriculum Vitae.pdf">
   <strong> Télécharger mon CV </strong></a>
+  
 </button>
 </body>
 
