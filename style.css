@@ -7,7 +7,7 @@
 
 #nom {
   text-align:justify;
-  margin-top: 10px;
+  margin-top: 250px;
   margin-right: 400px ;
 }
 
@@ -89,7 +89,7 @@ height: 200px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: 193px;
+    margin-left: 205px;
   }
   #DL {
     background-color: #c7b4b4; 
@@ -138,73 +138,7 @@ height: 270px;
   margin-left: 650px;
 
 }
-/* menu principale */
-.menu {
-  display: flex;              /* Transformation en flexbox */
-  padding:0;                  /* Suppression des marges internes */
-  
-}
 
-.menu li {
-  list-style-type: none ;       /* Suppression des puces */
-}
-
-.menu a {
-  display:block;                /* Transformation en block */
-  min-width: 120px;             /* Largeur minimale des liens */
-}
-
-.menu a {
-  display:block;                /* Transformation en block */
-  min-width: 120px;             /* Largeur minimale des liens */   
-  
-  margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
-  padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
-  text-align: center;           /* Centrage du texte */   
-     
-  color: #fff;                  /* Couleur du texte */
-  text-decoration: none;        /* Suppression du soulignement */
-  border: 1px solid #fff;       /* Ajout d'une bordure */
-  border-radius: 4px;           /* Arrondis des bordures */
-}
-
-.menu {
-  display: flex;              /* Transformation en flexbox */
-  padding:0;                  /* Suppression des marges internes */
-  justify-content: center     /* Alignements des liens dans le menu */
-}
-
-.menu a:hover {
-  background-color: #ed2794;
-  color: #ffe843;
-  border-color: #ffe843;
-}
-
-.menu a {
-  display:block;                /* Transformation en block */
-  min-width: 120px;             /* Largeur minimale des liens */   
-  
-  margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
-  padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
-  text-align: center;           /* Centrage du texte */   
-  background-color: #1ABC9C;    /* Arrière-plan */
-  color: #fff;                  /* Couleur du texte */
-  text-decoration: none;        /* Suppression du soulignement */
-  border: 1px solid #fff;       /* Ajout d'une bordure */
-  border-radius: 4px;           /* Arrondis des bordures */
-  transition: all 1s ;          /* Ajout des effets de transition */
-} 
-.menu a.actif {    
-  background-color: #000 ; 
-  color: #1ABC9C ;
-  border-color: #1ABC9C ;
-}
-.menu a:hover,
-.menu a:hover.actif{
-background-color: #ed2794;
-color: #ffe843;
-border-color: #ffe843;
-}
 
 
 /* menu de projet:*/
@@ -252,12 +186,7 @@ li a {
   color: black;
 }
 
-.menu-deroulant > a:after{
-  content: '❯';
-  font-size: 15px;
-  margin-left: 7px;
-  display: inline-block;
-}
+
 
 .sous-menu {
   margin-top: var(--hauteur-menu);
@@ -307,4 +236,7 @@ nav > ul > li:hover > a{
 }
 .menu-deroulant:hover > .sous-menu {
   animation: apparitionSousMenu 1s forwards;
+}
+nav li {
+  list-style-type: none ;       /* Suppression des puces */
 }
