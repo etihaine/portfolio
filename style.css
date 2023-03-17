@@ -482,3 +482,8 @@ html {
       .conteneur{
         margin-top: 60px;
       }
+      footer {
+        padding: 10px 20px;
+        background: #ffffff;
+        color: white;
+      }
