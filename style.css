@@ -357,6 +357,17 @@ body {
   display: flex;
   margin-bottom: 10px;
 }
+.responsive {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 105%;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  margin-bottom: 10px;
+}
 .sous-titre{
   height: 300px;
   width: 100%;
@@ -404,7 +415,15 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
-.col-md-12,
+.col-md-12{
+  margin-top :200px;
+  margin-left: 200px;
+  position:static;
+  width:100%;
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px
+ }
 .col-md-6{
   margin-top :200px;
   margin-left: 200px;
@@ -621,3 +640,18 @@ html {
         z-index: 1;
         position: relative;
       }
+
+
+      .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+      btn-social {
+        height: 2.5rem;
+        width: 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border-radius: 100%;
+    }
